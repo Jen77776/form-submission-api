@@ -23,6 +23,20 @@ A full-stack mini web application that allows university employees to submit rec
 | File Upload | Flask + Werkzeug  |
 
 ---
+---
+
+## Reason for Choosing This Tech Stack
+
+I chose **React + Flask + SQLite** because they together allow rapid development and clean separation of concerns. React provides a responsive, component-based UI that makes form handling intuitive. Flask is lightweight, easy to configure, and ideal for quick API prototyping, especially with `flask-cors` enabling smooth cross-origin communication. SQLite is built into Python and perfect for lightweight apps without requiring setup.
+
+I considered using the preferred stack (.NET + Angular), but chose this stack due to:
+- Faster local setup and iteration
+- Easier debugging of CORS and file upload issues
+- Better alignment with my recent experience
+
+In a production setting, I would consider PostgreSQL for scalability, and perhaps FastAPI or .NET Core for stricter typing and documentation generation. But for this task, Flask + SQLite offered the best balance of speed and structure.
+
+---
 
 ## Setup Instructions
 
@@ -82,3 +96,9 @@ Fix:
 Switched backend to port 5050
 
 Updated frontend axios URL accordingly
+##  Code Highlights
+
+- All form fields are validated before submission.
+- Backend enforces file presence and type.
+- The app uses environment-agnostic solutions (no hardcoded paths).
+- The project structure separates frontend and backend cleanly for easy testing and deployment.
