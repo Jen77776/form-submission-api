@@ -26,7 +26,8 @@ A full-stack mini web application that allows university employees to submit rec
 
 ## Setup Instructions
 
-###  Backend (Flask)：Flask server will run at: http://127.0.0.1:5050
+###  Backend (Flask)：
+Flask server will run at: http://127.0.0.1:5050
 
 
 ```bash
@@ -36,10 +37,22 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python app.py
 ```
-###  Frontend (React)：React app will run at: http://localhost:3000   Submits POST request to: http://localhost:5050/api/submit
+###  Frontend (React)：
+React app will run at: http://localhost:3000   
+Submits POST request to: http://localhost:5050/api/submit
 ```bash
 cd frontend
 npm install
 npm start
 ```
+##  Time Spent
 
+| Task      | Estimated         |  Actual
+|------------|--------------------|
+| Backend (API + DB)   | 	1.5 hr  | 1.5 hr
+| Frontend (React Form)    | 1.5 hr | 2 hr
+| Debugging (CORS + Ports)   | 0.5 hr| 2 hr
+| Testing + Cleanup | 0.5 hr  |0.5 hr
+| Total | 	~4 hrs |~6 hrs
+
+---
